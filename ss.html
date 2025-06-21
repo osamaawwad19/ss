@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Manager</title>
+    <link rel="stylesheet" href="../Css/style.css" />
+</head>
+
+<body>
+    <section class="todo-container">
+        <header class="todo-container__header">
+            <h1>TodoInput</h1>
+        </header>
+
+        <!-- Input & Suggestions -->
+        <div class="input-group">
+            <i class="fa-solid fa-list input-group__icon"></i>
+            <input type="text" id="taskInput" class="input-group__input" placeholder="New Todo" />
+            <span id="inputError" class="input-group__error"></span>
+            <ul id="suggestionsList" class="suggestions hidden"></ul>
+        </div>
+
+        <!-- Add Button Below Input -->
+        <div class="add-button-container">
+            <button id="addBtn" class="input-group__button" disabled>
+                Add Task
+            </button>
+        </div>
