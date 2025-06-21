@@ -59,3 +59,39 @@
             </button>
         </div>
     </section>
+
+    <!-- Modals -->
+    <div id="renameModal" class="modal hidden">
+        <div class="modal__content">
+            <div class="modal__header">Rename Task</div>
+            <input type="text" id="renameInput" class="modal__input" placeholder="New name" />
+            <span id="renameError" class="modal__error"></span>
+            <div class="modal__actions">
+                <button id="renameConfirmBtn" class="modal__button modal__button--confirm">
+                    Save
+                </button>
+                <button id="renameCancelBtn" class="modal__button modal__button--cancel">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="deleteModal" class="modal hidden">
+        <div class="modal__content">
+            <div id="deleteModalHeader" class="modal__header">Confirm</div>
+            <div class="modal__actions">
+                <button id="deleteConfirmBtn" class="modal__button modal__button--confirm">
+                    Yes
+                </button>
+                <button id="deleteCancelBtn" class="modal__button modal__button--cancel">
+                    No
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>
