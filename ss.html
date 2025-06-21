@@ -28,3 +28,34 @@
                 Add Task
             </button>
         </div>
+        <!-- Filters -->
+        <div class="filters">
+            <button class="filters__button filters__button--active" data-filter="all">
+                All
+            </button>
+            <button class="filters__button" data-filter="done">Done</button>
+            <button class="filters__button" data-filter="todo">Todo</button>
+        </div>
+
+        <!-- Task Table (Task & Actions Only) -->
+        <table class="task-table">
+            <thead class="task-table__head">
+                <tr>
+                    <th>Task</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="taskTableBody"></tbody>
+        </table>
+        <div id="noTasksMsg" class="no-tasks">No tasks.</div>
+
+        <!-- Footer Buttons -->
+        <div class="footer-buttons">
+            <button id="deleteDoneBtn" class="footer-buttons__button" disabled>
+                Delete Done
+            </button>
+            <button id="deleteAllBtn" class="footer-buttons__button footer-buttons__button--secondary" disabled>
+                Delete All
+            </button>
+        </div>
+    </section>
