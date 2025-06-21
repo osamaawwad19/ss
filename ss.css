@@ -1,0 +1,133 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.todo-container {
+    max-width: 64rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .125rem .3125rem rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.todo-container__header h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    gap: .5rem;
+}
+
+.input-group__icon {
+    position: absolute;
+    left: .75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.input-group__input {
+    flex: 1;
+    padding: .75rem .75rem .75rem 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: .25rem;
+}
+
+.input-group__error {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: .875rem;
+    color: #dc3545;
+    margin-top: .25rem;
+}
+
+.add-button-container {
+    text-align: center;
+}
+
+.add-button-container .input-group__button {
+    width: 100%;
+    max-width: 12rem;
+    margin-top: .5rem;
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 8rem;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 .25rem .25rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+.suggestions__item {
+    padding: .5rem .75rem;
+    cursor: pointer;
+}
+
+.suggestions__item:hover {
+    background: #f0f0f0;
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .75rem;
+}
+
+.filters__button {
+    padding: .75rem;
+    border: none;
+    background: #17a2b8;
+    color: #fff;
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+.filters__button--active,
+.filters__button:hover {
+    background: #138496;
+}
+
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    justify-content: space-around;
+}
+
+.task-table__head th {
+    background: #17a2b8;
+    color: #fff;
+    padding: .75rem;
+    font-size: 1rem;
+    text-align: left;
+}
